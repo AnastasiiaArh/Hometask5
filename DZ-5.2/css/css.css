@@ -46,69 +46,42 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-@font-face {
-    font-family: 'Helvetica Neue Regular';
-    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+body {
+  background-color: #282828;
 }
-.container{
-width: 1215px;
-height: 1064px;
-margin: 0 auto;
+table {
+  margin: 0 auto;
+  background-color: #fff;
 }
-
-footer{
-  background-image: url(../img/Background.png);
-  background-repeat: repeat-x;
-  height: 36px;
-  color: #60b5ed;
-  font-family: "Helvetica Neue Regular";
-  line-height: 36px;
-  text-align: center;
-  position: relative;
+td {
+  width: 30px;
+  height: 30px;
+  border-top: 10px solid #000;
+  border-left: 10px solid #000;
 }
-footer ul {
-box-sizing: content-box;
-position: absolute;
-right: 20px;
+.yellow {
+  background-color: #fff56b;
 }
-footer ul li {
-  display: block;
-  float: left;
-  height: 36px;
-  box-sizing: content-box;
-  padding-left: 15px;
-  padding-right: 15px;
+.red {
+  background-color: #ff6144;
 }
-
-footer ul li a{
-  text-decoration: none;
-  color: #60b5ed;
-  font-family: "Helvetica Neue Regular";
+.blue {
+  background-color: #0c4c91;
 }
-
-footer>ul>li>a>img{
-padding: 5px;
-float: left;
-
-
+.dark {
+  background-color: #191919;
 }
-
-footer>ul>li:nth-child(6)>a {
-  color: white;
+.first_line td {
+  border-top: 0;
 }
-
-
-
-footer>ul>li:nth-child(7)>a {
-  color: white;
-  text-decoration: underline;
+td:last-child {
+  border: 0;
+  background-color: #282828;
 }
-
-footer>ul>li:nth-child(7) {
-  color: white;
+td:first-child {
+  border-left: 0;
+}
+.hidden td {
+  border: 0;
+  background-color: #282828;
 }

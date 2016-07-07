@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+font-family: 'Helvetica Neue Regular';
+src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+		url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+font-family: "Helvetica Neue Regular";
+}
+
+.container{
+width: 1215px;
+height: 1064px;
+margin: 0 auto;
+}
+
+header{
+	background-image: url(../img/Background.png);
+  background-repeat: repeat-x;
+	height: 36px;
+
+}
+
+header ul li {
+display: block;
+box-sizing: content-box;
+padding-left: 15px;
+padding-right: 15px;
+float: right;
+}
+
+header a {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.white_text:first-child {
+	margin-right: 20px;
+}
+
+.white_text {
+	color: #fefefe;
+}
+
+.white_text a{
+	color: #feffff;
+}
+
+.white_text img {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+.border	{
+	border-right: 1px solid #56a2dc;
+	height: 31px;
+	margin-top: 2px;
+}
+
+.blue_text a{
+	color: #60b5ed
+}
+
+header ul .white_text:hover {
+	background-image: linear-gradient(to top, #2e7ac4, #51b1dc);
+	border-left: solid 1px #449ad3;
+	border-right: solid 1px #449ad3;
+}
+
+header ul .blue_text:hover{
+		background-color: #4eabda;
+}
+header ul .blue_text:hover>a{
+	color: #fff;
+}
+
+/*CONTENT*/
+.wrapper {
+	width: 1215px;
+	height: 1028px;
+	background-image: url(../img/Background-2.png);
+
+}
+
+.sign_form {
+	width: 560px;
+	height: 613px;
+	background-color: transparent;
+	position: relative;
+	margin: 0 auto;
+	top:207px
+}
+
+.sign1{
+	height: 63px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	text-align: center;
+	line-height: 63px;
+	font-size: 24px;
+}
+
+.sign2{
+	height: 2px;
+}
+
+.sign3{
+	height: 548px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.facebook{
+	text-align: center;
+	padding-top: 36px;
+}
+
+.OU{
+	height: 74px;
+	text-align: center;
+	line-height: 74px;
+}
+
+.all_inf{
+	text-align: center;
+
+}
+
+.all_inf input{
+	width: 276px;
+	height: 36px;
+	margin-bottom: 19px;
+	text-indent: 10px;
+	background-color: #0f0f0f;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid #484948;
+}
+
+.all_inf div:last-child{
+	height: 36px;
+}
+
+
+.all_inf input:placeholder{
+	padding-left: 10px;
+	color: #cccccc;
+
+}
+
+.all_inf input:hover{
+	box-shadow: 0 0 9px rgba(47,123,197,.77), 0 1px #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+	background: radial-gradient(#1b5288, #1c466c);
+	color: #fffbfb;
+
+}
+.check {
+	height: 58px;
+	color: #cccccc;
+	text-align: center;
+	line-height: 58px;
+}
+
+.create{
+	text-align: center;
+}
+
+.create input{
+	width: 151px;
+	height: 36px;
+	padding: 0;
+	border: 0;
+	background-image: linear-gradient(to top, #2e7ac4, #4faddb);
+	color: #ffffff;
+}
+.expl {
+	text-align: center;
+	font-size: 11px;
+	color: #cccccc;
+}
+
+.expl span {
+	display: block;
+	width: 310px;
+	margin: 0 auto;
+	padding-top: 14px;
+}
